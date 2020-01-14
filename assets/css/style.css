@@ -28,20 +28,6 @@ a{
   width: 23em;
 }
 
-#vakje1 {
-  background: red;
-  vertical-align:top;
-  margin-top: 4px;
-  border: 1px darkgreen;
-  border-radius: 5px;
-  display: inline-block;
-  height: 1.25em;
-  width: 1.25em;
-  text-align: center;
-  font-size: 3.5em;
-  font-family: 'Lato', sans-serif;
-}
-
 body {
   margin: 0;
   width: 100%;
