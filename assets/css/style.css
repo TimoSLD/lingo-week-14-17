@@ -5,20 +5,6 @@ a{
     color: black;
 }
 
-button {
-  margin: 40px 0 0 0;
-  background: darkgreen;
-  border: 1px solid black;
-  padding: 7px;
-  color: white;
-  display: inline-block;
-}
-
-button:hover {
-  background-color: green;
-  color: red;
-}
-
 #title {
   text-align: center;
   color: black;
@@ -42,7 +28,7 @@ button:hover {
   width: 23em;
 }
 
-.vakje {
+#vakje1 {
   background: red;
   vertical-align:top;
   margin-top: 4px;
