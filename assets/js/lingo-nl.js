@@ -21,7 +21,6 @@ for(rij = 0; rij < 5; rij++){
     }
 }  
 
-
 var randomWord = words[Math.floor(Math.random() * words.length)];
 
 var textArray = randomWord.split('');
@@ -29,8 +28,7 @@ document.getElementById('vakje0-0').value = textArray[0];
 console.log(textArray);
 
 
-
-function check(){   
+function check(){ 
   var antwoord = document.getElementById('antwoord');
   var antwoord = antwoord.value.split('');
    
@@ -39,20 +37,18 @@ function check(){
             if(antwoord[i] == textArray[i]) {
                 document.getElementById("vakje" + poging + "-" + i).value = antwoord[i];
                 document.getElementById("vakje" + poging + "-" + i).style.backgroundColor = "green";
-                textArray[i] = null;
-            } else if (textArray.indexOf(antwoord[i])>-1) {
-                document.getElementById("vakje" + poging + "-" + i).value = antwoord[i];
-                document.getElementById("vakje" + poging + "-" + i).style.backgroundColor = "yellow";
-            } else {
-                document.getElementById("vakje" + poging + "-" + i).value = antwoord[i];
-                document.getElementById("vakje" + poging + "-"+ i).style.backgroundColor = "red";
-            }
+                textArray[i] = '*';
+            }   else if (textArray.indexOf(antwoord[i])>-1) {
+                    document.getElementById("vakje" + poging + "-" + i).value = antwoord[i];
+                    document.getElementById("vakje" + poging + "-" + i).style.backgroundColor = "yellow";
+                } else {
+                    document.getElementById("vakje" + poging + "-" + i).value = antwoord[i];
+                    document.getElementById("vakje" + poging + "-"+ i).style.backgroundColor = "red";
+                }
         }
     }
-    
-
     poging++
-}
+    }
 
     
 
